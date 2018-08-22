@@ -3,7 +3,7 @@ $bold      = 'MetricBold'
 $medium    = 'MetricSemiBold'
 $light     = 'MetricLight'
 $color   = #FDB913
-$default = #01a982
+$default = #007DC5
 flexCenter()
 	display flex
 	display -webkit-flex
@@ -466,89 +466,38 @@ footer
 				color #000000
 				text-decoration none
 				font-size 16px
-.js-card
-	background-color #FFFFFF
-	box-shadow 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23)
-	padding 20px
-.js-partners
-	img
-		max-width 250px
-		margin 15px
-#logistic
-	background-color #614767
-#register
-	background-color #90A878
-.js-book
-	background-color #614767 !important
-	text-decoration none !important
-	text-transform initial
-	color #FFFFFF !important
-	height 26px
-	line-height 26px
-	vertical-align middle
-.js-confirmation
-	width 100%
-	max-width 600px
-	color #FFFFFF
-	text-align center
-	margin 40px auto
-	display none
-	&.aparecer
+.js-servicios
+	flexCenter()
+	justify-content center
+	flex-wrap wrap
+	.mdl-card
 		display block
-	h2
-		font-family $medium
-		font-size 40px
-		line-height 40px
-		margin 20px 0
-	p
-		letter-spacing 1px
-#registered
-	&.aparecer
-		h2
-			color #000000
-			font-size 28px
-			line-height 30px
-.js-reserva
-	button
-		width 100%
-		max-width 200px
+		max-width 340px
+		margin 20px
+		padding 12px
+		box-shadow 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		.mdl-card__title
+			relative()
+			height 200px
+			background-size cover !important
+			&.principal1
+				background url(../img/espacios/recepcion.jpg) no-repeat center center
+			&.principal2
+				background url(../img/espacios/sala.jpg) no-repeat center center
+			&.principal3
+				background url(../img/espacios/cofee.jpg) no-repeat center center
+			&.principal4
+				background url(../img/espacios/cofee2.jpg) no-repeat center center
 /*MATERIAL DESIGN*/
 .mdl-card
 .mdl-card__supporting-text
 	width 100%
 	h2
-		font-size 24px
+		font-size 22px
+		line-height 26px
 		text-align center
-		color #757575
+		color #000000
 		margin 5px 0
-.mdl-card
-	display block
-	max-width 300px
-	margin 20px
-	.mdl-card__title
-		relative()
-		height 200px
-		background-size cover !important
-		&.principal1
-			background url(../img/espacios/recepcion.jpg) no-repeat center center
-		&.principal2
-			background url(../img/espacios/sala.jpg) no-repeat center center
-		&.principal3
-			background url(../img/espacios/cofee.jpg) no-repeat center center
-		&.principal4
-			background url(../img/espacios/cofee2.jpg) no-repeat center center
-		&.secundario1
-			background url(../img/espacios/dealroom.jpg) no-repeat center center
-		&.secundario2
-			background url(../img/espacios/waitingroom.jpg) no-repeat center center
-		&.secundario3
-			background url(../img/espacios/cowork.jpg) no-repeat center center
-		&.secundario4
-			background url(../img/espacios/cowork2.jpg) no-repeat center center
-		&.secundario5
-			background url(../img/espacios/sshh.jpg) no-repeat center center
-		&.secundario6
-			background url(../img/espacios/lectura.jpg) no-repeat center center
 /*MODAL*/
 .modal
 	&.fade

@@ -66,17 +66,11 @@ $('.js-espacio--principal .owl-carousel').owlCarousel({
 	autoplayTimeout: 5000,
 	navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 });
-$('.js-espacio--secundario .owl-carousel').owlCarousel({
+$('.js-carousel .owl-carousel').owlCarousel({
 	lazyLoad: true,
 	responsive: {
 		0: {
 			items: 1
-		},
-		400: {
-			items: 2
-		},
-		768: {
-			items: 3
 		}
 	},
 	navigation: false,
